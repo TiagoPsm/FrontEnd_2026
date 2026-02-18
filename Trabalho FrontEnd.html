@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Minha Coleção de Cartinhas Pokémon</title>
+
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+    }
+
+    header {
+        background-color: #3b4cca;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        background-color: #ffcb05;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav a {
+        color: #3b4cca;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+
+    h2 {
+        color: #3b4cca;
+        text-align: center;
+    }
+
+    section {
+        background-color: white;
+        margin: 20px auto;
+        padding: 20px;
+        width: 85%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .card {
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 200px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid #ffcb05;
+        background-color: #fff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #3b4cca;
+        color: white;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #3b4cca;
+        color: white;
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+        img {
+            width: 160px;
+            height: 230px;
+        }
+
+        section {
+            width: 95%;
+        }
+   }
+</style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Coleção de Cartinhas Pokémon</h1>
+        <p>As cartas mais raras e valiosas do mundo!</p>
+    </header>
+
+    <nav>
+       <a href="#lendarias">Lendárias</a>
+       <a href="#ultrararas">Ultra Raras</a>
+       <a href="#valiosas">Mais Valiosas</a>
+       <a href="#favoritas">Favoritas</a>
+    </nav>
+
+    <section id="lendarias">
+        <h2>🔥 Cartas Lendárias</h2>
+
+        <div class="galeria">
+
+            <div class="card">
+                <img src="https://sm.ign.com/ign_br/screenshot/default/charizard-holo-shadowless-1st_26r6.jpg" alt="Charizard">
+                <p>Charizard 1ª Edição</p>
+            </div>
+
+            <div class="card">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_836203-MLB48343925498_112021-O.webp" alt="Mewtwo">
+                <p>Mewtwo EX</p>
+            </div>
+
+            <div class="card">
+                <img src="https://img.mypcards.com/img/2/1065/pokemon_ces_160_168/pokemon_ces_160_168_en.jpg" alt="Rayquaza">
+                <p>Rayquaza GX</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ultrararas">
+
+        <h2>💎 Cartas Ultra Raras</h2>
+
+        <div class="galeria">
+
+            <div class="card">
+                <img src="https://preview.redd.it/pok%C3%A9mon-card-prices-have-reached-an-absurd-level-a-pikachu-v0-66fljdkrtkpf1.jpeg?auto=webp&s=5163bbbd1bde1c84fba528c38f135c7c1348dad4" alt="Pikachu Illustrator">
+                <p>Pikachu Illustrator</p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn11.bigcommerce.com/s-b4ioc4fed9/images/stencil/original/products/421746/2950457/oWhPTF2WrjnDbj0v5nlr9mC8N__77346.1764937798.jpg" alt="Umbreon">
+                <p>Umbreon Gold Star</p>
+            </div>
+
+            <div class="card">
+                <img src="https://tcgplayer-cdn.tcgplayer.com/product/106997_in_1000x1000.jpg" alt="Blastoise">
+                <p>Blastoise Shadowless</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="valiosas">
+
+        <h2>📊 Cartas Mais Valiosas</h2>
+
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Raridade</th>
+                <th>Valor Estimado</th>
+            </tr>
+            <tr>
+                <td>Charizard 1ª Edição</td>
+                <td>Lendária</td>
+                <td>R$ 500.000+</td>
+            </tr>
+            <tr>
+                <td>Pikachu Illustrator</td>
+                <td>Ultra Rara</td>
+                <td>R$ 5.000.000+</td>
+            </tr>
+            <tr>
+                <td>Umbreon Gold Star</td>
+                <td>Ultra Rara</td>
+                <td>R$ 100.000+</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="favoritas">
+
+        <h2>⭐ Cartas Favoritas da Coleção</h2>
+
+        <div class="galeria">
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/51Q9TlUJg7L._AC_UF894,1000_QL80_.jpg" alt="Lugia">
+                <p>Lugia EX</p>
+            </div>
+
+            <div class="card">
+
+                <img src="https://m.media-amazon.com/images/I/81B-QB50feL.jpg" alt="Gengar">
+                <p>Gengar VMAX</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        Página criada para atividade de HTML - Tema: Colação de Cartinhas Pokémon
+    </footer>
+
+</body>
+</html>
