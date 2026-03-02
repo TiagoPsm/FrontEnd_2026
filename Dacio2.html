@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML e CSS Básico</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    /* Menu */
+    nav {
+      background: #222;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Estrutura */
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    /* Exemplo CSS */
+    #titulo-principal {
+      color: blue;
+    }
+
+    .botao {
+      display: inline-block;
+      background: green;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .botao:hover {
+      background: darkgreen;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#exemplo">Exemplo</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card" id="html">
+      <h1 id="titulo-principal">O que é HTML?</h1>
+      <p>HTML cria a estrutura do site.</p>
+      <p>Tags comuns:</p>
+      <p>&lt;h1&gt; Título</p>
+      <p>&lt;p&gt; Parágrafo</p>
+      <p>&lt;a&gt; Link</p>
+      <p>&lt;div&gt; Divisão</p>
+    </div>
+
+    <div class="card" id="css">
+      <h2>O que é CSS?</h2>
+      <p>CSS muda o visual do site.</p>
+      <p>Exemplo:</p>
+      <p>h1 { color: blue; }</p>
+      <p>.botao { background: green; }</p>
+    </div>
+
+    <div class="card" id="exemplo">
+      <h2>Exemplo Prático</h2>
+      <p>Este botão usa uma classe CSS:</p>
+      <a href="#" class="botao">Clique aqui</a>
+    </div>
+
+	 <div class="card" section id="css">
+	<form>
+	<fieldset>
+
+		<legend> Envie-me uma carinhosa mensagem </legend>
+
+		<label for="name">Nome</label><br>
+		<input type="text" id="nome" name="nome"><br><br>
+
+		<label >Genero</label><br>
+		<input type="radio" name="gen">Masculino
+		<input type="radio" name="gen">Feminino<br><br>
+
+		<label >Tamo junto?</label><br>
+		<input type="radio" name="gen">Tmj Dmais<br>
+		<input type="radio" name="gen">N Tamo Junto<br>
+
+		<input type="submit" value ="Enviar">
+
+	</fieldset>
+	</form>
+	</div>
+</section>
+
+  </div>
+
+</body>
+</html>
