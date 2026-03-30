@@ -1,0 +1,20 @@
+body {
+    background: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+#main {
+    width: 250px;
+}
+
+#btn {
+    width: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
