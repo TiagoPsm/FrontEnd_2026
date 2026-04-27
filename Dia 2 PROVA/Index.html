@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Grupos e Fatos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        #pagina-principal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1a73e8;
+        }
+
+        .container-grupos {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 2px solid #dcdcdc;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .card li {
+            margin-bottom: 5px;
+        }
+
+        .card details {
+            margin-top: auto;
+            width: 100%;
+            background-color: #eef3ff;
+            border: 1px solid #cdd9ff;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .card summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        .card p {
+            margin-top: 8px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pagina-principal">
+        <h1>Grupos e Fatos</h1>
+
+        <div class="container-grupos">
+
+            <div id="grupo-a" class="card">
+                <h2>Grupo A</h2>
+
+                <h3>Seleções</h3>
+                <ul>
+                    <li>México</li>
+                    <li>África do Sul</li>
+                    <li>Coreia do Sul</li>
+                    <li>República Tcheca</li>
+                </ul>
+
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>
+                        O jogo de abertura será México x África do Sul.
+                        Confrontos entre Coreia do Sul e seleções europeias já ocorreram
+                        em várias Copas, com histórico equilibrado.
+                    </p>
+                </details>
+            </div>
+
+            <div id="grupo-b" class="card">
+                <h2>Grupo B</h2>
+
+                <h3>Seleções</h3>
+                <ul>
+                    <li>Canadá</li>
+                    <li>Suíça</li>
+                    <li>Catar</li>
+                    <li>Vaga Europeia (Bósnia)</li>
+                </ul>
+
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>
+                        O Canadá joga em casa, fator importante de desempenho.
+                        Catar e Suíça já se enfrentaram recentemente em amistosos internacionais.
+                    </p>
+                </details>
+            </div>
+
+            <div id="grupo-c" class="card">
+                <h2>Grupo C</h2>
+
+                <h3>Seleções</h3>
+                <ul>
+                    <li>Brasil</li>
+                    <li>Marrocos</li>
+                    <li>Haiti</li>
+                    <li>Escócia</li>
+                </ul>
+
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>
+                        Brasil, Marrocos e Escócia já dividiram grupo em 1998.
+                        Brasil nunca perdeu para a Escócia em Copas.
+                    </p>
+                </details>
+            </div>
+
+        </div>
+        <button onclick="proximo()">Próximo</button>
+
+<script>
+function proximo() {
+    document.querySelector("#grupo-a h2").innerHTML = "Grupo 🅳";
+    document.querySelector("#grupo-a ul").innerHTML = `
+        <li>Estados Unidos</li>
+        <li>Paraguai</li>
+        <li>Austrália</li>
+        <li>Turquia</li>
+    `;
+    document.querySelector("#grupo-a p").innerHTML = `
+        Os EUA jogam em casa, vantagem histórica em Copas.
+        Austrália enfrenta frequentemente seleções sul-americanas em torneios.
+    `;
+
+    document.querySelector("#grupo-b h2").innerHTML = "Grupo 🅴";
+    document.querySelector("#grupo-b ul").innerHTML = `
+        <li>Alemanha</li>
+        <li>Equador</li>
+        <li>Costa do Marfin</li>
+        <li>Curaçao</li>
+    `;
+    document.querySelector("#grupo-b p").innerHTML = `
+        Alemanha costuma dominar fases de grupos.
+        Equador e Costa do Marfim têm estilos físicos semelhantes.
+    `;
+
+    document.querySelector("#grupo-c h2").innerHTML = "Grupo 🅵";
+    document.querySelector("#grupo-c ul").innerHTML = `
+        <li>Holanda</li>
+        <li>Japão</li>
+        <li>Tunísia</li>
+        <li>Suécia</li>
+    `;
+    document.querySelector("#grupo-c p").innerHTML = `
+        Brasil, Marrocos e Escócia já dividiram grupo em 1998.
+        Brasil nunca perdeu para a Escócia em Copas.
+    `;
+}
+</script>
+    </div>
+</body>
+</html>
