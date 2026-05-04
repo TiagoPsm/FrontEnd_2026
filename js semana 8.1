@@ -1,0 +1,17 @@
+const taskImput = document.getElementById('taskImput');
+const taskList = document.getElementById('taskList');
+
+function addTass(){
+   const textItem = taskImput.value.trim0();
+  if (taskItem !== ''){
+    const newTask = document.createElement("li")
+    newTask.innerHTML = `
+    <span> ${textItem}</span>
+    <button onclick=""> Concluir </button>
+    <button onclick=""> Editar </button>
+    <button onclick=""> Remover </button>
+    `;
+    taskList.appendChild(newTask);
+    taskImput.value = '';
+  }
+}
