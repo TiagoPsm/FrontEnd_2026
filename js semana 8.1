@@ -1,17 +1,40 @@
-const taskImput = document.getElementById('taskImput');
+const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 
-function addTass(){
-   const textItem = taskImput.value.trim0();
-  if (taskItem !== ''){
+function addTask(){
+   const textItem = taskInput.value.trim();
+  if (textItem !== ''){
     const newTask = document.createElement("li")
     newTask.innerHTML = `
     <span> ${textItem}</span>
-    <button onclick=""> Concluir </button>
-    <button onclick=""> Editar </button>
-    <button onclick=""> Remover </button>
+    <button onclick="completar(this)"> Concluir </button>
+    <button onclick="editar()"> Editar </button>
+    <button onclick="delet(this)"> Remover </button>
     `;
     taskList.appendChild(newTask);
-    taskImput.value = '';
+    taskInput.value = '';
   }
+  
+}
+
+function delet(button){
+  const taskToRemove = button.parentElement;
+  taskList.removeChild(taskToRemove);
+}
+
+function completar(button){
+  const taskToComplete = button.parentElement;
+  taskToComplete.classList.add("completed");
+}
+  
+function editar(button){
+  const taskToedit = button.parentElement;
+  const taskText taskToedit.querySelector('span').innerText;
+  const newText = prompt('Editar',taskText);
+  textToEdit.innerHTML = `
+    <span> ${newText}</span>
+    <button onclick="completar(this)"> Concluir </button>
+    <button onclick="editar()"> Editar </button>
+    <button onclick="delet(this)"> Remover </button>
+    `;
 }
